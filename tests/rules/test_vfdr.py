@@ -60,9 +60,9 @@ def test_vfdr():
     expected_model_measurements = {'Number of rules: ': 3, 'model_size in bytes': 62295}
     expected_model_measurements_ = {'Number of rules: ': 3, 'model_size in bytes': 73167}
 
-    if sys.version_info.minor != 6:
-        assert (learner.get_model_measurements() == expected_model_measurements) or\
-               (learner.get_model_measurements() == expected_model_measurements_)
+    # if sys.version_info.minor != 6:
+    assert (learner.get_model_measurements() == expected_model_measurements) or\
+           (learner.get_model_measurements() == expected_model_measurements_)
 
 
 def test_vfdr_foil():
